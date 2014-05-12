@@ -10,3 +10,7 @@ module CurrentCart
     session[:cart_id] = @cart.id
   end
 end
+
+# Tu bedziemy przechowywac identyfikator koszyka, Metoda set_cart - zaczyna od
+# uzyskania card_id z obiektu sesji i próbuje znaleźć odpowiedni wózek do tego id.
+# Jeżeli z jakiegos powodu go nie znajdzie, utworzy po prostu nowy !

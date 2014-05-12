@@ -14,7 +14,7 @@ class Product < ActiveRecord::Base
 
   private
 
-  # ensure that there are no line items referencing this product
+  # sprawdzmy czy nie istnieją inne powiązania dwolujące sie do tego produktu
   def ensure_not_referenced_by_any_line_item
     if line_items.empty?
       return true
