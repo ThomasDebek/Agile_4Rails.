@@ -7,8 +7,8 @@ class Cart < ActiveRecord::Base
     current_item = line_items.find_by(product_id: product_id)  # czy nasza lista elementów ma juz w sobie produkty
     if current_item                                            # jesli tak to wpada ilosc
       current_item.quantity += 1                               # a jesli nie to budujemy nowy polonczenie line_items
-    else
-      current_item = line_items.build(product_id: product_id)
+    else                                                       # a nasz find_by - zamiast zwracac tablice wyników
+      current_item = line_items.build(product_id: product_id)  # zwraca albo istniejący line_items  lub zero
     end
     current_item
   end
