@@ -7,21 +7,26 @@ DepotRails4::Application.routes.draw do
     delete 'logout' => :destroy
   end
 
-  get "sessions/new"
+
   get "sessions/create"
   get "sessions/destroy"
 
 
   resources :users
-  resources :orders
-  resources :line_items
-  resources :carts
+
 
   root 'store#index', as: 'store'
 
   get "store/index"
   resources :products do
     get :who_bought, on: :member
+  end
+
+  scope '(:locale)' do
+    resources :orders
+    resources :line_items
+    resources :carts
+    root 'store#index', as: 'store', via: :all
   end
 
   # The priority is based upon order of creation: first created -> highest priority.
