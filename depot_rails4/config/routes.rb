@@ -15,7 +15,7 @@ DepotRails4::Application.routes.draw do
   resources :users
 
 
-  root 'store#index', as: 'store'
+
 
   get "store/index"
   resources :products do
