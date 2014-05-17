@@ -17,6 +17,12 @@
   <% end %>
   <%= image_tag("logo.png") %>
   <%= @page_title || t('.title') %>
+  <div id="right">
+    <%= button_to 'Login', users_path %>
+  </div>
+
+
+
 </div>
 <div id="columns">
   <div id="side">

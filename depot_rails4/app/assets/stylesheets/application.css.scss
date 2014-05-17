@@ -12,16 +12,30 @@
  *= require_tree .
  */
 
+body {
+  background-image: image-url("tlo_chmury.jpg");
+}
+
+
 #banner {
-  background: #9c9;
+  background: cornflowerblue;
   padding: 10px;
   border-bottom: 2px solid;
   font: small-caps 40px/40px "Times New Roman", serif;
-  color: #282;
+  color: #ffffff;
   text-align: center;
 
   img {
     float: left;
+  }
+  #right {
+     float: right;
+    display: inline;
+    margin-right: 20px;
+    margin-top: -11px;
+    display: inline;
+
+
   }
 }
 #notice {
@@ -33,18 +47,18 @@
   font: bold smaller sans-serif;
 }
 #columns {
-  background: #141;
+  background-image: image-url("tlo_chmury.jpg");
 
   #main  {
     margin-left: 17em;
     padding: 1em;
-    background: white;
+    background: #999999;
   }
   #side {
     float: left;
     padding: 1em 2em;
     width: 13em;
-    background: #141;
+    background-image: image-url("tlo_chmury.jpg");
 
     form, div {
       display: inline;

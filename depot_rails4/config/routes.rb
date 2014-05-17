@@ -14,9 +14,6 @@ DepotRails4::Application.routes.draw do
 
   resources :users
 
-
-
-
   get "store/index"
   resources :products do
     get :who_bought, on: :member
