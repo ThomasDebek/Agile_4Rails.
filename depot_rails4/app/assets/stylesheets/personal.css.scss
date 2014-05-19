@@ -1,0 +1,32 @@
+// Place all the styles related to the Personal controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.personal {
+     #about_me {
+       color: white;
+       text-align: center;
+       em {
+         text-decoration: underline;
+       }
+
+     }
+     #contact {
+       h2 {
+         color: white;
+         text-align: center;
+       }
+     }
+     #news {
+       h2, p{
+         color: white;
+         text-align: center;
+       }
+     }
+
+
+
+
+
+}
+

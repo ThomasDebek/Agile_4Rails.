@@ -3,7 +3,7 @@ es:
        application:
           title:       "Publicaciones de Pragmatic"
           home:        "Inicio"
-          questions:   "Preguntas"
+          about_me:   "Acerca de mí"
           news:        "Noticias"
           contact:     "Contacto"
 

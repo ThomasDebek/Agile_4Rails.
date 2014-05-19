@@ -26,7 +26,7 @@ en:
       application:
         title:       "Pragmatic Bookshelf"
         home:        "Home"
-        questions:   "Questions"
+        about_me:   "About me"
         news:        "News"
         contact:     "Contact"
 

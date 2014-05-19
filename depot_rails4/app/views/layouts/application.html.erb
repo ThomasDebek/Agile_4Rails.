@@ -17,9 +17,13 @@
   <% end %>
   <%= image_tag("logo.png") %>
   <%= @page_title || t('.title') %>
-  <div id="right">
+
+
+    <div id="right">
     <%= button_to 'Login', users_path %>
-  </div>
+     </div>
+
+
 
 
 
@@ -33,10 +37,11 @@
     <% end %>
 
     <ul>
-      <li><a href="http://www...."><%= t('.home') %></a></li>
-      <li><a href="http://www..../faq"><%= t('.questions') %></a></li>
-      <li><a href="http://www..../news"><%= t('.news') %></a></li>
-      <li><a href="http://www..../contact"><%= t('.contact') %></a></li>
+      <li><a href="http://0.0.0.0:3000/en"><%= t('.home') %></a></li>
+      <li><a href="http://0.0.0.0:3000/personal/about_me"><%= t('.about_me') %></a></li>
+      <li><a href="http://0.0.0.0:3000/personal/news"><%= t('.news') %></a></li>
+      <li><a href="http://0.0.0.0:3000/personal/contact"><%= t('.contact') %></a></li>
+
     </ul>
 
     <% if session[:user_id] %>
