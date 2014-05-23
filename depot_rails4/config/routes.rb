@@ -1,6 +1,7 @@
 DepotRails4::Application.routes.draw do
 
 
+  get "users/new"
   get 'admin' =>'admin#index'
   controller :sessions do
     get 'login' => :new
